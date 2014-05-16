@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+#This script your make your x presentation mode.
+xrandr --output eD --auto --same-as eDP1

@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+#this script unset system proxy variables.
+unset http_proxy
+unset https_proxy
+unset ftp_proxy
+unset HTTP_PROXY
+unset HTTPS_PROXY
+unset FTP_PROXY
+
+#under line is used for GNOME enviroment.
+#gsettings set org.gnome.system.proxy mode 'auto'
+

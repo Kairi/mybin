@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+#This program check Internet connection.
+#using google DNS and google.co.jp
+
+echo "STARTING onnection check..."
+ping -c1 8.8.8.8
+ping -c1 www.google.co.jp
+

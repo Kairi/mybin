@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#This script resign dual display mode.
+xrandr --output DP1 --off

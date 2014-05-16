@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+#if your android device was NOT recognized, test this script.
+#WARN:this script using sudo commnad.
+sudo adb kill-server
+sudo adb start-server

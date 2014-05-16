@@ -1,4 +1,4 @@
 mybin
 =====
 
-This repository sustains my uilitys.
+This repository sustains my utilities.

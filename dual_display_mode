@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+#this script make your monitor dual display mode in xmonad enviroment,
+#and set your wall paper.
+
+xrandr --output eDP1 --auto --left-of DP1
+#feh --bg-scale "insert your wallpaper for dual display"
