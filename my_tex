@@ -1,23 +1,25 @@
-#!/bin/bash
+#!/usr/bin/env zsh
+
 #This program is made for compile tex file contains Japanese(SJIS or UTF8).
 
 #file path setting
 original_file_path=$1
 original_file_base=`basename $1 .tex`
-dvi_file_path=$original_file_base".dvi"
-pdf_file_path=$original_file_base".pdf"
+dvi_file_path="${original_file_base}.dvi"
+pdf_file_path="${original_file_base}.pdf"
 
 #start complile
 echo "Start Comple:"$original_file_path
+#convert character code
 nkf -w --overwrite $original_file_path
-platex --kanji=utf $original_file_path
 
-#start dvi to pdf
-echo "Inflated DVI File:"$dvi_file_path
-dvipdfmx $dvi_file_path
+platex --kanji=utf $original_file_path &&
+    echo "Inflated DVI File:"$dvi_file_path &&
+        dvipdfmx $dvi_file_path &&
+	    acroread  $pdf_file_path
 
-#view pdffile
-acroread  $pdf_file_path
+
+
 
 
 
